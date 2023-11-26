@@ -1,0 +1,411 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Spectral', serif;
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffc017;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* css navbar */
+
+div.navbar {
+    background-color: #ffc017;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1%;
+}
+
+.sticky{
+    position: sticky;
+    z-index: 9;
+    top: 0;
+    border-bottom: 1px solid black;
+}
+
+div.prova {
+    margin-inline: 6%
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+ul li {
+    font-size: 12px
+}
+
+nav button,
+main button {
+    background-color: #191919;
+    color: white;
+    border-radius: 40px;
+}
+
+button.get {
+    width: 100px;
+    height: 30px;
+    font-size: 12px
+}
+
+img.svg {
+    position: absolute;
+    height: 330px;
+    right: 0;
+    top: 0;
+}
+/* classi per js changeStyle */
+
+.backnav {
+    background-color: white;
+}
+
+.backbut {
+    background-color: #1a8917;
+}
+
+/* css hero main */
+
+main {
+    border-bottom: 1px solid black;
+}
+
+div.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 20px;
+    background-color: #ffc017;
+    position: relative;
+    min-height: 320px;
+}
+
+div.test {
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+}
+
+div.head {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+div.head h1 {
+    font-size: 80px;
+}
+
+div.head p {
+    font-weight: 700;
+}
+
+div.head button {
+    width: 140px;
+    height: 30px;
+}
+
+
+/* css article */
+
+div.trending {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    margin-left: 6%;
+}
+
+.trending p {
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+div.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5%;
+}
+
+div.article {
+    margin: 2%;
+    width: 26%;
+    display: flex;
+}
+
+p.numb {
+    color: lightgray;
+    font-size: 36px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+div.int {
+    display: flex;
+    align-items: center;
+}
+
+img.circle {
+    border-radius: 50px;
+    width: 24px;
+}
+
+img.border {
+    border-radius: 8px;
+    width: 24px;
+}
+
+p.info {
+    padding: 8px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+h5.h5 {
+    font-weight: 700;
+    font-size: 16px;
+    padding-block: 8px;
+}
+
+p.read {
+    color: darkgrey;
+    font-size: 14px;
+}
+
+article {
+    border-bottom: 1px solid lightgray;
+}
+
+/* css aside */
+
+div.footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+/* css altro e other (articoli correlati) */
+
+div.altro {
+    max-width: 60%;
+}
+
+div.other {
+    max-width: 30%;
+    height: 30%;
+    align-items: flex-start;
+}
+
+/* css singolo articolo */
+
+div.news {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 8%;
+    margin-block: 4%;
+}
+
+div.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-top: 6%;
+}
+
+div.title img {
+    border-radius: 50%;
+    width: 24px;
+}
+
+div.title h5 {
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 2%;
+}
+
+div.quest h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+div.quest p {
+    color: darkgrey;
+    font-size: 14px;
+    margin-bottom: 2%
+}
+
+div.when {
+    color: darkgrey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+div.when button {
+    color: darkgrey;
+    border: none;
+    width: 80px;
+    height: 24px;
+    font-size: 12px;
+    border-radius: 50px;
+}
+
+img.foto {
+    width: 200px;
+    margin: 6%;
+}
+
+/* css other articoli correlati */
+
+div.other.sticky2 {
+    position: sticky;
+    top: 54px;
+}
+
+.other h5 {
+    font-weight: bolder;
+    margin-top: 10%;
+    font-size: 12px;
+    margin-bottom: 4%;
+}
+
+.other button {
+    background-color: transparent;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    color: darkgray;
+    padding: 3%;
+    margin: 1%;
+}
+
+hr.op {
+    opacity: 0.3;
+}
+
+ul.list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.list li {
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    img.svg {
+        right: -200px;
+    }
+    .trending p {
+        font-size: 10px;
+    }
+    div.article {
+        width: 42%;
+    }
+    p.numb {
+        font-size: 28px;
+    }
+    p.info {
+        padding: 0;
+        padding-left: 8px;
+    }
+    img.star {
+        display: none;
+    }
+    div.footer {
+        flex-direction: column-reverse;
+    }
+    div.other {
+        max-width: 100%;
+    }
+    .other h5 {
+        margin-top: 6%;
+    }
+    .other button {
+        padding: 1%;
+    }
+    .discover {
+        margin-inline: 6%;
+    }
+    hr {
+        opacity: 0.3;
+    }
+    div.other.sticky2 {
+        position: static
+    }
+    ul.list {
+        margin-inline: 6%;
+    }
+    div.altro {
+        max-width: 100%;
+    }
+    div.news {
+        margin-block: 2%;
+    }
+    img.foto {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    img.svg {
+        display: none;
+    }
+    .prova ul li:nth-of-type(1) {
+        display: none;
+    }
+    .prova ul li:nth-of-type(2) {
+        display: none;
+    }
+    .prova ul li:nth-of-type(3) {
+        display: none;
+    }
+    div.head h1 {
+        font-size: 54px;
+    }
+    div.article {
+        width: 90%;
+    }
+    h5.h5 {
+        font-size: 14px;
+    }
+    p.numb {
+        padding-right: 20px;
+    }
+    div.news {
+        margin-inline: 3%;
+    }
+    .discover {
+        margin-inline: 3%;
+    }
+    ul.list {
+        margin-inline: 3%;
+    }
+    div.title h5 {
+        font-size: 12px;
+    }
+    img.foto {
+        width: 160px;
+    }
+    div.quest h2{
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    div.quest p {
+        font-size: 10px;
+    }
+}
